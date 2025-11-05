@@ -174,7 +174,7 @@
           <div class="input-group">
             <label class="input-label">Monthly Rent</label>
             <div class="input-wrapper">
-              <input type="number" id="monthlyRent" class="input-field" value="2000" step="100">
+             <input type="number" id="monthlyRent" class="input-field" value="2000" step="50" min="0">
               <span class="input-suffix">$/month</span>
             </div>
           </div>
@@ -182,7 +182,7 @@
           <div class="input-group">
             <label class="input-label">Security Deposit</label>
             <div class="input-wrapper">
-              <input type="number" id="securityDeposit" class="input-field" value="2000" step="100">
+             <input type="number" id="securityDeposit" class="input-field" value="2000" step="100" min="0">
               <span class="input-suffix">$</span>
             </div>
           </div>
@@ -190,7 +190,7 @@
           <div class="input-group">
             <label class="input-label">Annual Rent Increase</label>
             <div class="input-wrapper">
-              <input type="number" id="rentIncrease" class="input-field" value="3" step="0.1">
+             <input type="number" id="rentIncrease" class="input-field" value="3" step="0.1" min="0" max="20">
               <span class="input-suffix">% per year</span>
             </div>
           </div>
@@ -205,7 +205,7 @@
           <div class="input-group">
             <label class="input-label">Home Price</label>
             <div class="input-wrapper">
-              <input type="number" id="homePrice" class="input-field" value="400000" step="10000">
+            <input type="number" id="homePrice" class="input-field" value="400000" step="10000" min="0">
               <span class="input-suffix">$</span>
             </div>
           </div>
@@ -213,7 +213,7 @@
           <div class="input-group">
             <label class="input-label">Down Payment</label>
             <div class="input-wrapper">
-              <input type="number" id="downPayment" class="input-field" value="20" step="1">
+            <input type="number" id="downPayment" class="input-field" value="20" step="1" min="0" max="100">
               <span class="input-suffix">%</span>
             </div>
           </div>
@@ -221,7 +221,7 @@
           <div class="input-group">
             <label class="input-label">Interest Rate</label>
             <div class="input-wrapper">
-              <input type="number" id="interestRate" class="input-field" value="6.5" step="0.1">
+             <input type="number" id="interestRate" class="input-field" value="6.5" step="0.05" min="0" max="50">
               <span class="input-suffix">%</span>
             </div>
           </div>
@@ -229,7 +229,7 @@
           <div class="input-group">
             <label class="input-label">Loan Term (years)</label>
             <div class="input-wrapper">
-              <input type="number" id="loanTerm" class="input-field" value="30" step="1" min="1" max="40">
+            <input type="number" id="loanTerm" class="input-field" value="30" step="1" min="1" max="40">
               <span class="input-suffix">years</span>
             </div>
           </div>
@@ -245,7 +245,7 @@
                 <div class="input-group">
                   <label class="input-label">Property Tax</label>
                   <div class="input-wrapper">
-                    <input type="number" id="propertyTax" class="input-field" value="1.2" step="0.1">
+                    <input type="number" id="propertyTax" class="input-field" value="1.2" step="0.1" min="0" max="20">
                     <span class="input-suffix">% per year</span>
                   </div>
                 </div>
@@ -253,7 +253,7 @@
                 <div class="input-group">
                   <label class="input-label">Maintenance & Insurance</label>
                   <div class="input-wrapper">
-                    <input type="number" id="maintenance" class="input-field" value="1.5" step="0.1">
+                   <input type="number" id="maintenance" class="input-field" value="1.5" step="0.1" min="0" max="20">
                     <span class="input-suffix">% per year</span>
                   </div>
                 </div>
@@ -304,6 +304,10 @@
                data-ad-slot="7200865026"
                data-ad-format="auto"
                data-full-width-responsive="true"></ins>
+          <script>
+  try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+</script>
+
         </div>
 
         <div class="card" style="margin-top:24px;">
@@ -451,6 +455,7 @@
 
 </body>
 </html>
+
 
 
 
