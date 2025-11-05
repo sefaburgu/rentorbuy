@@ -42,23 +42,7 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 
-  <!-- ✅ Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Rent vs Buy Calculator",
-    "url": "https://www.rentorbuycalculator.net/",
-    "description": "Compare renting vs buying a home with this free calculator that analyzes mortgage, rent, taxes, and maintenance costs.",
-    "applicationCategory": "FinanceApplication",
-    "operatingSystem": "All",
-    "author": {
-      "@type": "Organization",
-      "name": "RentorBuyCalculator.net"
-    }
-  }
-
-    <!-- ✅ Structured Data (JSON-LD) -->
+ <!-- ✅ Structured Data (JSON-LD) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -71,6 +55,41 @@
   "author": { "@type": "Organization", "name": "RentorBuyCalculator.net" }
 }
 </script>
+
+<!-- ✅ FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Is it better to rent or buy a home in 2025?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"It depends on your mortgage rate, property taxes, maintenance costs, and local rent growth. This calculator compares long-term total costs so you can see which option is cheaper for you."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"How does this Rent vs Buy Calculator work?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"We estimate rent over time with annual increases and compare it to buying costs: down payment, mortgage payments, property taxes, and maintenance across your chosen loan term."
+      }
+    },
+    {
+      "@type":"Question",
+      "name":"What inputs should I change first?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Start with monthly rent, home price, down payment %, interest rate, and loan term. Then adjust property tax, maintenance, and annual rent increase to match your market."
+      }
+    }
+  ]
+}
+</script>
+
 
   </script>
 
@@ -444,5 +463,6 @@
 
 </body>
 </html>
+
 
 
