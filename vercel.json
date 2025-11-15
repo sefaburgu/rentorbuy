@@ -1,16 +1,20 @@
 {
-  "routes": [
-    { "src": "/ads.txt", "dest": "/ads.txt" },
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ],
-  "headers": [
+  "rewrites": [
     {
       "source": "/ads.txt",
-      "headers": [
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
-        { "key": "Cache-Control", "value": "public, max-age=3600" }
-      ]
+      "destination": "/ads.txt"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/about",
+      "destination": "/about.html",
+      "permanent": true
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms.html",
+      "permanent": true
     }
   ]
 }
